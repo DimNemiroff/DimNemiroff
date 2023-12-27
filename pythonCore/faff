@@ -1,0 +1,9 @@
+data = {1:'odin', 2: 'dwa', 3: 'tri', 4: 'odin'}
+value = 'dwa'
+my_list = []
+for key in data.keys():
+        x in dictview
+        print(key, data.values(key))
+        #my_li = my_list.append(chr(key))
+        #print(my_list)
+    

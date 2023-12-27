@@ -7,20 +7,24 @@ class User:
 
     def greet(self):
         print(f'Hi, my login is {self.login}')
-
+'''
     @property
     def mandatum(self):
-        return self.__mandatum
-
+        self.mandatum = mandatum
+        return  
+        
+        
     @mandatum.setter
     def mandatum(self, user_level=None):
         self.mandatum = user_level
+'''
 
     def get_access(self, access_object):  # має поля name, level)
-        self.name = access_object.name
-        self.level = access_object.access_level
 
-        return
+        if access_object.access_level < self.mandatum:
+            print(access_object.name)
+        else:
+            print(f"Access to {access_object.name} denied!")
 
 
 class AccessLevel:

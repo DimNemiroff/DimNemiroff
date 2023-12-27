@@ -1,0 +1,26 @@
+def is_valid_pin_codes(pin_codes):
+    if not pin_codes:
+        return False
+
+    seen_pins = set()
+
+    for pin in pin_codes:
+        if isinstance(pin, str) and pin.isnumeric() and len(pin) == 4:
+            if pin in seen_pins:
+                return False
+            seen_pins.add(pin)
+        else:
+            return False
+
+    return True
+
+code_list = [['1101', '9034', '0011'],
+             ['1101', '9034', '0011', '9034'],
+             ['1101', 0.254, '0011', '9034'],
+             ['1101', '79034', '0011'],
+             ['11F1', '9034', '0011'],
+             []]
+
+for codes in code_list:
+    print(is_valid_pin_codes(codes))
+

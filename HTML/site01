@@ -1,0 +1,161 @@
+YPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+    .w3-bar-block .w3-bar-item {padding:20px}
+    </style>
+  </head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">Мої солодкі шедеври</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <h3>Червоний оксамит</h3>
+      <img src="./Images/Red_welwet2.jpg" alt="Monk house" style="width:100%">
+      <p>Головна особливість кулінарного шедевру – незвичайний колір. Традиційно його готують із використанням вершкового сиру.  Ідеальний торт для дня народження або особливих випадків. Торт виходить дуже м'яким і насиченим всередині з чудовим ледь відчутним шоколадним смаком, а ніжний вершковий крем, робить його просто чарівним!</p>
+    </div>
+    <div class="w3-quarter">
+      <h3>Монастирська хата</h3>
+      <img src="./Images/Monk_house2.jpg" alt="Monk house" style="width:100%">
+      <p>Десерт з різноманітними назвами - Смерекова Хата, Монастирська ізба, Дрова під Снігом, Стріха. Він надзвичайно смачний, ефектний та святковий . В розрізі оригінальний та неповторний!Торт "Монастирська хата" - дуже смачна та дивовижна випічка. Ніжне тісто у поєднанні з кисленькою вишнею та повітряним кремом робить цей десерт просто неймовірним!</p>
+    </div>
+    <div class="w3-quarter">
+      <h3>Останній довід королів</h3>
+      <img src="./Images/20221029_180155.jpg" alt="Steak" style="width:100%">
+      <p>Справжній останній аргумент Королівського обіду. Святковий вигляд та насичений шоколадно вершковий смак.“Торнадо”, “Буревій”,” Ураган” – щоразу він виходить по іншому і по-різному захоплює уяву та смак. Кажуть його видумав японський кондитер. Може й так, там повно всяких тайфунів... Скуштуйте й ви цей неповторний солодкий десерт</p>
+    </div>
+    <div class="w3-quarter">
+      <h3>Пташине молоко</h3>
+      <img src="./Images/20220717_205844.jpg" alt="Cherries" style="width:100%">
+      <p>Неперевершений десерт. Одночасно строгий та найніжніший, підкреслить аристократичний стиль та святковий стіл. Ніжні вершки, сметана та какао - ось івсе що треба для свята за родинним столом. Але найголовніше - то добрі руки хазайки, та ніжна любов.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
+      <h3>All I Need Is a Popsicle</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="Salmon" style="width:100%">
+      <h3>Salmon For Your Skin</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="Croissant" style="width:100%">
+      <h3>Le French</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Це її світ!</h3><br>
+    <img src="./Images/20221029_173126.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>І вона дійсно робить цей світ солодким !</b></h4>
+      <h6><i>С посмішкою та надхненням весь світ буде біля твоїх шедеврів!</i></h6>
+      <p>У нашему домі завжди пахне щастям та натхненням. Все завдяки найкращій кулінарній майстрині – моїй неймовірній дружині. Її торти 🌈🍰 – це справжній шедевр, який танцює в роті і розчиняє серце ❤️. Вся родина збирається за столом і ми танемо в світі неймовірних смакових вражень. Не просто торти та тістечка – це справжній витвір мистецтва. Щоразу, коли вони виходять з її рук, моя душа летить у небо від щастя та насолоди. Це не просто їжа, це магія на тарілці! Кожен шматочок – це подорож у світ справжнього блаженства!</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Дружнє попередження!</h3>
+      <p>:)Обережно! Споживання великої кількості солодощів може привести до лінтяйства 😍🎂. Не забувайте робити щось крисне та бути вдячними вашим рідним.</p>
+      <p>Made with <a href="https://www.w3schools.com/spaces" target="_blank">W3Schools Spaces</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Цікаві посилання</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="https://www.w3schools.com/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>Популярне по темі</h3>
+      <p>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Instagram</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">S.O.W.A</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

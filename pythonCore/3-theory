@@ -1,0 +1,79 @@
+import sys
+import pathlib
+
+
+def print_file_name(file_name):
+    print(file_name)
+
+
+def main():
+    file_name = pathlib.WindowsPath(sys.argv[0])
+    print_file_name(file_name)
+    
+    print(file_name.name)
+
+
+people = ["Tom", "Sam", "Bob"]
+i = 0
+while i < len(people):
+    print(people[i])    # применяем индекс для получения элемента
+    i += 1
+
+
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+'''
+
+def total(a=5, *numbers, **phone_book):
+    print('a', a)
+    # прохід по всіх елементах кортежу
+    for single_item in numbers:
+        print('single_item', single_item)
+
+    #прохід по всіх елементах словника
+    for first_part, second_part in phone_book.items():
+        print(first_part,second_part)
+
+print(total(10, 1, 2, 3, Jack=1123, John=2231, Inge=1560))
+######################################
+
+my_tuple = tuple()
+another_tuple = ()
+
+not_empty = (1, 2, 3)
+
+not_empty = (2, 4, 6)
+not_empty[0]    # 2
+not_empty[1]    # 4
+not_empty[2]    # 6
+
+for growy in not_empty :
+
+    print(growy)
+
+some_dict = {
+    "key": "value",
+    1: "one",
+}
+
+
+some_dict ["nom"] = "06754852416"
+
+for first_part, second_part in some_dict.items() :
+    print(first_part,second_part)
+#########################################
+
+
+def func(**darts):
+    
+    return darts
+
+result = func(x=9,y=8,z=0)
+print(result)
+
+'''

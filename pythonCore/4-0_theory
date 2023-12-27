@@ -1,0 +1,7 @@
+numbers = list([5] * 6)   # 6 раз повторяем 5
+print(numbers)      # [5, 5, 5, 5, 5, 5]
+numbers = list([5,5,5,5,6])   # 6 раз повторяем 5
+print(numbers)      # [5, 5, 5, 5, 5, 5]
+numbers = list(['hello','hi','good'])   # 
+print(numbers[2])      # [5, 5, 5, 5, 5, 5]
+nombers1 = tuple(["Nom","Fater"])

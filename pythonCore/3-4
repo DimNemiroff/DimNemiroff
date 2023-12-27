@@ -1,0 +1,15 @@
+price = 28.6
+discount = 0.25
+
+
+def discount_price(price, discount):
+    def apply_discount():
+        nonlocal price
+        price = price * (1- discount)
+
+    apply_discount()
+    return price
+
+
+discount_price(price, discount)
+print(price, discount)

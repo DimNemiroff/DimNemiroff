@@ -1,0 +1,20 @@
+result = None
+operand = None
+operator = None
+wait_for_number = True
+while operator != '=' :
+    if wait_for_number == False :
+            operator = input('enter operator ')
+            if operator in ('+' , '-' , '*' , '/') : 
+                wait_for_number = True
+            elif operator not in ( '+' , '-' , '*' , '/' , '=' ) :
+                raise Exception 
+            elif operator == '=' :
+                pass
+            #else :
+            print( result )
+    elif wait_for_number == True :
+            operand = input('enter number ')
+            operand = float (operand)
+            wait_for_number = False
+print(operand , operator)

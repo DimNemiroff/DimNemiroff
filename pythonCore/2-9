@@ -1,0 +1,13 @@
+first = int(input("Enter the first integer: "))
+second = int(input("Enter the second integer: "))
+if first >= second: 
+    gcd = second
+else:   
+    gcd = first
+a = None
+b = None
+while not (a == 0 and b == 0) and gcd != 0:
+    a = first % gcd
+    b = second % gcd
+    gcd -= 1
+print(gcd,a, b)

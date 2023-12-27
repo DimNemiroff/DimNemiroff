@@ -1,0 +1,16 @@
+n= 8
+F = 0
+
+
+def fibonacci(n):
+    global F
+    if n < 1 :
+        return 1
+    F = F + fibonacci(n-1)
+    print(F,n)
+    return F
+    
+    
+        
+fibonacci(n)
+print(F)

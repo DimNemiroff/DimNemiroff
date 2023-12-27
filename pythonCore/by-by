@@ -1,0 +1,14 @@
+from greeting import g_n
+
+
+def goodby(name):
+    print(f'Goodby {name}')
+
+
+def main():
+    name = g_n()
+    goodby(name)
+
+
+print(f'__name__ = {__name__}')
+main()
