@@ -17,8 +17,8 @@ class Owner:
         self.address = address
 
     def info(self):
-        oinfo = ("name": self.name, "age" : self.age, "address" : self.address)
-        return 
+        return {"name": self.name, "age": self.age, "address": self.address}
+
 
 class Dog(Animal):
     def __init__(self, nickname, weight, breed, owner):
@@ -33,6 +33,6 @@ class Dog(Animal):
         return self.owner.info()
     
 
-sasha = Owner("Sasha", 23, "Fergana? 34")
+sasha = Owner("Sasha", 23, "Fergana, 34")
 dog = Dog("Barbos", 3, "labrador", sasha)
-print(f'The {dog.owner.name} say {dog.nickname} go to {dog.owner.address}, but {dog.breed} {} the bigger than cat and say loudly {dog.say()} ')
+print(f'The {dog.owner.name} say {dog.nickname} go to {dog.owner.address}, but {dog.breed} say {dog.say()}!')

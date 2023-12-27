@@ -4,7 +4,7 @@ from HW_12.main2 import AuthenticatedUser
 class AccessObject:
     content = ""
     name = ""
-    owner = AuthenticatedUser()
+    owner = None
 
     def change_owner(self, old_owner_password, new_owner):
         if self.owner.authenticate(old_owner_password):

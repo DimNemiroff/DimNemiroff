@@ -31,4 +31,3 @@ class Dog(Animal):
 cat = Cat("Simon", 10, "malaga")
 dog = Dog("Barbos", 23, "labrador")
 print(f'{cat.nickname} say {cat.say()}, but {dog.breed} {dog.nickname} the bigger than cat and say loudly {dog.say()} ')
-
