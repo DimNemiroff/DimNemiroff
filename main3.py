@@ -1,4 +1,4 @@
-from HW_12.main2 import AuthenticatedUser
+from PythonLesn.HW_12.main2 import AuthenticatedUser
 
 
 class AccessObject:
