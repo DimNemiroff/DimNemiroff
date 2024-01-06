@@ -2,8 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/HW_12" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Encapsulos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hackingtool" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Listing" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/pythonProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PythonLesn/HW_12" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fileShreder" vcs="Git" />
   </component>
 </project>

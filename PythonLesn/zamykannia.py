@@ -17,7 +17,8 @@ def get_handler(operator):
 
 
 handler = get_handler('-')
+print(get_handler("+")(2, 3))  # -1
 print(handler)
-print(handler(2, 3))  # -1
 
 print(get_handler('+')(2, 3))  # 5
+print(handler)

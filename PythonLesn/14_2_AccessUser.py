@@ -1,32 +1,3 @@
-class User:
-    __mandatum = 0
-
-    def __init__(self, login, mandatum):
-        self.login = login
-        self.__mandatum = mandatum
-
-    def greet(self):
-        print(f'Hi, my login is {self.login}')
-'''
-    @property
-    def mandatum(self):
-        self.mandatum = mandatum
-        return  
-        
-        
-    @mandatum.setter
-    def mandatum(self, user_level=None):
-        self.mandatum = user_level
-'''
-
-    def get_access(self, access_object):  # має поля name, level)
-
-        if access_object.access_level < self.mandatum:
-            print(access_object.name)
-        else:
-            print(f"Access to {access_object.name} denied!")
-
-
 class AccessLevel:
     def __init__(self, name, level):
         self.name = name
@@ -38,15 +9,48 @@ class AccessLevel:
     def __lt__(self, other):
         return self.level < other.level
 
+    def __le__(self, other):
+        return self.level <= other.level
+
     def __gt__(self, other):
         return self.level > other.level
 
 
 class AccessObject:
-    def __init__(self, _name, _content, _access_level):
-        self.name = _name
-        self.content = _content
-        self.access_level = _access_level
+    def __init__(self, name, content, access_level):
+        self.name = name
+        self.content = content
+        self.access_level = access_level
+
+
+class User:
+    login = "Guest"
+    __mandatum = None  # AccessLevel(None, 0)
+
+    def __init__(self, login, mandatum):
+        self.login = login
+        self.__mandatum = mandatum
+
+    def greet(self):
+        print(f'Hi, my login is {self.login}')
+
+    @property
+    def mandatum(self):
+        print('get mandatum call')
+        return self.__mandatum.name
+
+    @mandatum.setter
+    def mandatum(self, value):
+        print('set mandatum call')
+        if hasattr(value, "name") and hasattr(value, "level"):
+            self.__mandatum = value
+
+    def get_access(self, access_object):
+
+        if access_object.access_level <= self.__mandatum:
+            print(access_object.content)
+        else:
+            print(f"Access to {access_object.name} denied!")
 
 
 if __name__ == '__main__':
@@ -56,13 +60,11 @@ if __name__ == '__main__':
 
     alice = User("Alice", top_secret)
     bob = User("Bob", unclassified)
-
     password_database = AccessObject(
         "Password Database",
         "Alice - C00peR, Bob - uNc1e",
         secret
     )
-
     alice.greet()  # Hi, my login is Alice
     alice.get_access(password_database)  # Alice - C00peR, Bob - uNc1e
 

@@ -10,7 +10,8 @@ class AuthenticatedUser(User):
         self.user_password = "password"
 
     def authenticate(self, user_password):
-        return user_password == password
+        return self.user_password == password
+
 
 password = "password"
 
