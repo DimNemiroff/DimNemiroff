@@ -1,4 +1,4 @@
-from PythonLesn.HW_12.main import User
+from PythonLesn import User
 
 
 class AuthenticatedUser(User):
